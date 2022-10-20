@@ -1,0 +1,38 @@
+//FONT COLORS
+
+$brand: #5865f2;
+$brand-gradient: linear-gradient(90deg,#8ea1e1,#7289da);
+$greyple: #99aab5;
+$dark-not-black: #2c2f33;
+$focus-border: #00b0f4;
+$status-green: #43b581;
+$text-link: #00b0f4;
+$off-white: #f6f6f6;
+$white: #fff;
+$not-quite-black: #23272a;
+$not-quite-black-rgb: 35,39,42;
+$black: #000;
+$ekko-red: #de2761;
+
+//-------------//
+
+@font-face {
+    font-family: Incised;
+    src: url('incised901-nd-bt.ttf');
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url('whitneysemibold.otf');
+}
+
+//FONT STYLES
+
+$font-primary: 'Incised', sans-serif;
+$font-display: "Ginto Normal","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+$font-headline: "Ginto Nord","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+$font-monospace: "Menlo","Consolas","Monaco",monospace;
+$font-glitch: "ArchivoBlack","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+$font-cursive: "Reenie Beanie","Comic Sans MS",cursive,sans-serif;
+
+//------------//

@@ -1,0 +1,474 @@
+@import './mixins';
+@import './resets';
+@import './variables';
+
+
+body{
+    font-family: $font-primary;
+    
+}
+
+
+.download-hero{
+    width: 100%;
+    height: 100vh;
+    background-color: $dark-not-black;
+    
+}
+
+.download-container{
+    width: 85%;
+    height: 80%;
+    margin: 5rem auto;
+    @include flex(space-between,center);
+}
+
+.download-text{
+    width: 60%;
+    
+}
+
+.download-text-holder{
+    text-align: left;
+    width: 75%;
+    
+
+    h1{
+        color: white;
+        font-weight: 900;
+        font-size: 2.75rem;
+        line-height: 1;
+        width: 100%;
+    }
+
+    
+}
+
+.download-para-holder{
+    width: 85%;
+    text-align: left;
+    p{
+        color: white;
+        margin-top: 2rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+        font-family: $font-display;
+    }
+}
+
+.download-btn-holder{
+    width: 100%;
+    text-align: left;
+    @include flex(flex-start,center);
+    svg{
+        margin-right: 0.5rem;
+    }
+    margin-bottom: 5rem;
+}
+
+.linux{
+    @include flex(space-between,center);
+
+    svg{
+        rotate: 90deg;
+        padding-bottom: 0.25rem;
+    }
+
+}
+
+.download-section-link{
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    color: $white;
+    background-color: $brand;
+    border-radius: 2rem;
+    border: none;
+    margin: 2rem 0;
+    
+    cursor: pointer;
+    @include flex(center,center);
+}
+
+.windows-link{
+    color: #FFF;
+    background-color: transparent;
+    border: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.download-img{
+    width: 40%;
+    margin-bottom: 5rem;    
+    
+    .download-section-img{
+        width: 100%;
+        scale: 1.3;
+    }
+}
+
+.devices-section{
+    width: 100%;
+    height: auto;
+    margin: 8rem 0;
+    @include flex(space-around,center)
+}
+
+.devices-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0 20px;
+    padding: 0 24px;
+}
+
+.device-grid{
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+
+.device-card{
+    width: 580px;
+    height: 600px;
+    background-color: #f6f6f6;
+    border-radius: 1rem;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.device-text{
+    height: 50%;
+    width: 90%;
+    margin: auto;
+    @include flex(center,center);
+    flex-direction: column;
+
+    .device-name{
+        font-size: 2.5rem;
+        font-weight: 500;
+        font-family: $font-display;
+        margin: 0.75rem 0;
+    }
+
+    .device-download{
+        padding: 1rem 1.75rem;
+        background-color: $not-quite-black;
+        color: white;
+        border: none;
+        border-radius: 2rem;
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+}
+
+.device-img{
+    width: 90%;
+    margin: auto;
+    height: 50%;
+    overflow-y: hidden;
+}
+
+.mobile-img{
+    width: 80%;
+    height: 80%;
+}
+
+.experimental{
+    width: 350px;
+    height: 275px;
+    background-color: #f6f6f6;
+    margin: 0;
+    @include flex(flex-start,center);
+    flex-direction: column;
+}
+
+.experimental-text{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    font-family: $font-display;
+
+    h1{
+        font-size: 2rem;
+        color: $not-quite-black;
+    }
+
+    p{
+        font-size: 1.22rem;
+        margin: 1rem 0;
+    }
+
+    button{
+        padding: 1rem 1.5rem;
+        background-color: $not-quite-black;
+        border: none;
+        border-radius: 2rem;
+        color: white;
+        font-size: 1.25rem;
+
+        @include flex(center,center);
+
+        svg{
+            padding-bottom: 0.25rem;
+            rotate: 90deg;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .devices-section{
+        min-height: 225vh;
+    }
+    
+
+    .devices-container{
+        grid-template-columns: repeat(12,0.25fr);
+    }
+
+    .device-grid{
+        grid-template-columns: 0.25fr 0.25fr;
+        grid-template-rows: repeat(22,50px);
+        grid-column: span 12;
+        grid-column-gap: 15px;
+
+        
+
+        .item-2{
+            grid-row: 3;
+            grid-column: 2;
+        }
+
+        .item-3{
+            
+            grid-row: 10;
+            
+        }
+
+        .item-4{
+            grid-row: 12;
+            grid-column: 2;
+        }
+
+        .item-5{
+            grid-row:19;
+        }
+
+    }
+
+    .experimental{
+        width: 580px;
+    }
+
+}
+
+
+@media screen and (max-width: 750px) and (min-width: 400px){
+
+    .download-hero{
+        height: auto;
+        background-color: rgb(35, 39, 42);
+    }
+    
+    .download-img{
+        display: none;
+    }
+    
+    .download-text{
+        width: 100%;
+        
+    }
+
+    .download-text-holder{
+        width: 100%;
+        h1{
+            font-weight: 600;
+            font-size: 1.275rem;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+    }
+
+    .download-para-holder > p{
+        width: 100%;
+        font-size: 0.8725rem;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    
+    .download-btn-holder{
+        @include flex(center,center);
+    }
+
+    .download-section-link{
+        font-size: 1.25rem;
+        width: 100%;
+    }
+
+    .windows-link{
+        display: none;
+    }
+
+    .devices-section{
+        margin: 3rem 0;
+    }
+
+    .device-card{
+        width: 350px;
+        height: 400px;
+    }
+
+    .device-text{
+        
+        .device-name{
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+
+    .experimental{
+        width: 350px;
+        height: 400px;
+
+        .experimental-text{
+            width: 75%;
+            margin: auto;
+
+            button{
+                font-size: 1.175rem;
+                font-weight: 300;
+                
+    
+                @include flex(space-between,center);
+    
+                svg{
+                    rotate: 90deg;
+                    scale: 1.5;
+                    padding-bottom: 0.25rem;
+                    margin: 0 0.75rem;
+                }
+            }
+
+            
+        }
+
+        .experimental-text > h1{
+            font-size: 1.25rem;
+        }
+
+        .experimental-text > p{
+            font-size: 1rem;
+            font-weight: 300;
+            color: $black;
+        }
+
+        
+    }
+}
+
+@media screen and (max-width: 399px) and (min-width: 250px){
+    .device-card{
+        width: 300px;
+        height: 325px;
+    }
+
+    .download-hero{
+        height: auto;
+        background-color: rgb(35, 39, 42);
+    }
+    
+    .download-img{
+        display: none;
+    }
+    
+    .download-text{
+        width: 100%;
+        
+    }
+
+    .download-text-holder{
+        width: 100%;
+        h1{
+            font-weight: 600;
+            font-size: 1.275rem;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+    }
+
+    .download-para-holder > p{
+        width: 100%;
+        font-size: 0.8725rem;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    
+    .download-btn-holder{
+        @include flex(center,center);
+    }
+
+    .download-section-link{
+        font-size: 1.25rem;
+        width: 100%;
+    }
+
+    .windows-link{
+        display: none;
+    }
+
+    .devices-section{
+        margin: 3rem 0;
+    }
+
+    .device-text{
+        
+        .device-name{
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+
+    .experimental{
+        width: 300px;
+        height: 325px;
+
+        .experimental-text{
+            width: 75%;
+            margin: auto;
+
+            button{
+                font-size: 1.175rem;
+                font-weight: 300;
+                
+    
+                @include flex(space-between,center);
+    
+                svg{
+                    rotate: 90deg;
+                    scale: 1.5;
+                    padding-bottom: 0.25rem;
+                    margin: 0 0.75rem;
+                }
+            }
+
+            
+        }
+
+        .experimental-text > h1{
+            font-size: 1.25rem;
+        }
+
+        .experimental-text > p{
+            font-size: 1rem;
+            font-weight: 300;
+            color: $black;
+        }
+
+        
+    }
+}

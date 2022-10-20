@@ -1,0 +1,214 @@
+@import './mixins';
+@import './resets';
+@import './variables';
+
+
+.safetycenter-wrapper{
+    height: auto;
+    background-color: $brand;
+}
+
+.sC-hero-container{
+    width: 100%;
+    height: 100%;
+    @include flex(center,flex-start);
+    margin: 5rem 0;
+}
+
+.sC-hero-text{
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    font-family: $font-primary,sans-serif;
+    color: #FFFF;
+    
+    h1{
+        font-size: 2.75rem;
+        width: 80%;
+        font-weight: 100;
+    }
+}
+
+.sC-hero-card{
+    margin: 2.25rem 0;
+    font-family: "Whitney",sans-serif;
+    width: 85%;
+    padding: 0.5rem;
+    transition: all ease-in 200ms;
+
+    p{
+        margin: 1.5rem 0;
+        font-size: 1.125rem;
+    }
+
+    span{
+        
+        @include flex(flex-start,center);
+        flex-direction: row;
+
+        img{
+            margin: 0 0.75rem;
+        }
+    }
+}
+
+.sC-hero-card:hover{
+    background-color: rgb(101, 113, 243);
+    
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.sc-hero-img{
+    width: 50%;
+    height: 100%;
+}
+
+.safety-wrapper{
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    background-color: #f6f6f6;
+}
+
+.safety-container{
+    width: 100%;
+    height: 100%;
+    
+    @include flex(center,center);
+
+    .safety-text{
+        width: 35%;
+        height: 100%;
+        text-align: left;
+        
+
+        h2{
+            font-family: "Whitney",sans-serif;
+            font-size: 3rem;
+            color: $brand;
+            margin: 2.5rem 2rem;
+
+        }
+
+        img{
+            width: 90%;
+            height: auto;
+            margin-left: 1rem;
+        }
+
+        p{
+            font-family: "Whitney",sans-serif;
+            font-size: 1rem;
+            color: $not-quite-black;
+            margin: 0 2rem;
+            opacity: 0.75;
+            line-height: 1.5;
+        }
+
+        button{
+            margin: 1rem 0;
+            background-color: $brand;
+            color: #FFF;
+            font-size: 1.25rem;
+            border: none;
+            border-radius: 25px;
+            padding:1rem 1.25rem;
+            margin: 2rem ;
+        }
+    }
+
+    .safety-card-con{
+        width: 65%;
+        height: 100%;
+        margin: 2rem auto;
+        @include flex(center,center);
+        flex-wrap: wrap;
+    }
+
+    .safetyCard{
+        width: 350px;
+        height: 300px;
+        margin: 1rem;
+        cursor: pointer;
+        text-align: left;
+        font-family: "Whitney",sans-serif;
+
+        img{
+            height: 175px;
+            width: 350px;
+            border-radius: 1rem;
+            object-fit: cover;
+        }
+
+        h3{
+            margin: 1rem;
+            font-size: 1.25rem;
+            transition: all ease-in 200ms;
+        }
+
+        h4{
+            margin: 1rem;
+            color: $brand;
+            font-size: 1.25rem;
+
+            
+        }
+
+        h3:hover{
+            color: $brand;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 250px) and (max-width: 1150px) {
+    .sC-hero-img{
+        display: none;
+
+        img{
+            display: none;
+        }
+    }
+
+    .sC-hero-card{
+        width: 100%;
+    }
+
+    .sC-hero-container{
+        
+        margin: 0;
+    }
+
+    .sC-hero-text{
+        width: 90%;
+        margin: 0 auto;
+
+        h1{
+            font-size: 1.75rem;
+            width: 100%;
+        }
+    }
+
+    .safety-container{
+        flex-direction: column;
+
+        .safety-text{
+            width: 100%;
+            margin: 0;
+
+            h2{
+                font-size: 1.5rem;
+            }
+
+            button{
+                width: 90%;
+                margin: 1rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}

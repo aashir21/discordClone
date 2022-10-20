@@ -1,0 +1,536 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Incised;
+  src: url("incised901-nd-bt.ttf");
+}
+
+@font-face {
+  font-family: Whitney;
+  src: url("whitneysemibold.otf");
+}
+
+.nitro-wrapper {
+  position: relative;
+  height: 80vh;
+}
+
+.video-wrapper {
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b473f5), to(#e292aa));
+  background-image: linear-gradient(180deg, #b473f5, #e292aa);
+}
+
+.nitro-hero {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.vid-holdr {
+  width: 100%;
+  margin-top: 7rem;
+  scale: 1.225;
+}
+
+.vid-holdr video {
+  scale: 1.35;
+  image-rendering: optimizeQuality;
+}
+
+.mobile-hero-img {
+  display: none;
+}
+
+.mobile-layout-wrapper {
+  display: none;
+}
+
+.nitro-container {
+  width: 85%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nitro-text {
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  margin: 5rem 6rem;
+  font-family: "Whitney",sans-serif;
+}
+
+.nitro-para {
+  width: 100%;
+  height: auto;
+  font-family: "Ginto Normal", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.225rem;
+  margin: 1rem 0;
+  color: #FFF;
+  line-height: 1.5;
+}
+
+.hero-btn-holder {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 3rem 0;
+}
+
+.yearly-btn {
+  background-color: #23272a;
+  padding: 1rem;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.175rem;
+  color: #FFF;
+  margin: 0 1rem;
+  width: 400px;
+  font-family: "Whitney",sans-serif;
+  font-weight: 500;
+}
+
+.nitro-inner {
+  color: #FFF;
+  background-color: #5865f2;
+  padding: 0.25rem 0.5rem;
+  border-radius: 25px;
+  font-size: 14px;
+  margin: 0 1rem;
+}
+
+.monthly-btn {
+  font-family: "Whitney",sans-serif;
+  background-color: #23272a;
+  padding: 1rem;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.175rem;
+  color: #FFF;
+  margin: 0 1rem;
+  width: 300px;
+}
+
+.nitro-features {
+  height: auto;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  background-color: #FFF;
+}
+
+.nitro-feature-titles {
+  width: 85%;
+  margin: 10rem auto 0 auto;
+  font-family: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.nitro-feature-titles h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #23272a;
+  padding-top: 5rem;
+}
+
+.nitro-feature-titles h3 {
+  font-size: 1.25rem;
+  color: #23272a;
+  margin: 2rem 0;
+}
+
+.nitro-features-container {
+  width: 90%;
+  height: 100%;
+  margin: 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nitro-ft-card {
+  width: 375px;
+  height: 300px;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+
+.nitro-ft-card-title {
+  width: 75%;
+  margin: 2rem auto;
+  font-family: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #FFF;
+}
+
+.nitro-ft-card-title h2 {
+  font-size: 1.25rem;
+}
+
+.nitro-ft-card-title p {
+  line-height: 1.5;
+  width: 85%;
+  margin: 0.5rem auto;
+  font-weight: 300;
+}
+
+.card1 {
+  background-image: linear-gradient(135deg, #04a99f, #24e4ef);
+}
+
+.card2 {
+  background-image: linear-gradient(135deg, #4375ff, #22edff);
+}
+
+.card3 {
+  background-image: linear-gradient(135deg, #3e70ff, #9997ff);
+}
+
+.card4 {
+  background-image: linear-gradient(135deg, #817afe, #f973fa);
+}
+
+.card5 {
+  background-image: linear-gradient(135deg, #f944e0, #ffc94f);
+}
+
+.card5 img {
+  height: 115px;
+  width: 200px;
+}
+
+.card6 {
+  background-image: linear-gradient(135deg, #f06f1b, #ffc849);
+}
+
+.card6 img {
+  height: 135px;
+  width: 200px;
+}
+
+.nitro-tail {
+  width: 100%;
+  height: auto;
+  margin: 8rem 0;
+}
+
+.nitro-tail .nitro-tail-con {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.nitro-tail .nitro-tail-con h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif, sans-serif;
+}
+
+.nitro-tail .nitro-tail-con .hero-btn-holder button {
+  width: 275px;
+}
+
+.nitro-tail .nitro-tail-con .hero-btn-holder .btn-2 {
+  width: 200px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nitro-container {
+    display: none;
+  }
+  .video-wrapper {
+    display: none;
+  }
+  .nitro-hero {
+    min-height: 75vh;
+    background-image: -webkit-gradient(linear, left top, right top, from(#b473f5), to(#e292aa));
+    background-image: linear-gradient(to right, #b473f5, #e292aa);
+    overflow-x: hidden;
+  }
+  .mobile-layout-wrapper {
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .mobile-img-holder, .mobile-nitro-text {
+    position: absolute;
+  }
+  .mobile-img-holder {
+    margin-top: 10rem;
+    margin-left: 20rem;
+  }
+  .mobile-nitro-text {
+    margin-top: 45rem;
+    width: 75%;
+  }
+  .mobile-nitro-text .mobile-nitro-para {
+    font-family: "Ginto Normal", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #FFF;
+    font-size: 1.25rem;
+    margin: 1rem auto;
+  }
+  .mobile-hero-btn-holder button {
+    margin: 0.5rem;
+    width: 85%;
+  }
+  .mobile-hero-btn-holder .monthly-btn {
+    width: 85%;
+  }
+  .mobile-hero-img {
+    display: block;
+    scale: 0.425;
+  }
+  .nitro-features {
+    z-index: -1;
+  }
+  .nitro-ft-card {
+    width: 225px;
+  }
+  .nitro-feature-titles {
+    width: 85%;
+    margin: 1rem auto;
+    letter-spacing: 1px;
+  }
+  .nitro-feature-titles h1 {
+    text-align: center;
+    font-size: 3.125rem;
+    letter-spacing: 1px;
+  }
+  .nitro-feature-titles h3 {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .nitro-tail .nitro-tail-con h2 {
+    font-size: 1.75rem;
+  }
+  .nitro-tail .nitro-tail-con .hero-btn-holder button {
+    margin: 0 0.75rem;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 750px) {
+  .nitro-container {
+    display: none;
+  }
+  .video-wrapper {
+    display: none;
+  }
+  .nitro-hero {
+    min-height: 85vh;
+    background-image: -webkit-gradient(linear, left top, right top, from(#b473f5), to(#e292aa));
+    background-image: linear-gradient(to right, #b473f5, #e292aa);
+    overflow-x: hidden;
+  }
+  .mobile-layout-wrapper {
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .mobile-img-holder, .mobile-nitro-text {
+    position: absolute;
+  }
+  .mobile-img-holder {
+    margin-top: 10rem;
+    margin-left: 20rem;
+  }
+  .mobile-nitro-text {
+    margin-top: 45rem;
+  }
+  .mobile-nitro-text .mobile-nitro-para {
+    font-family: "Ginto Normal", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #FFF;
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .mobile-hero-btn-holder button {
+    margin: 0.5rem;
+    width: 85%;
+  }
+  .mobile-hero-btn-holder .monthly-btn {
+    width: 85%;
+  }
+  .mobile-hero-img {
+    display: block;
+    scale: 0.425;
+  }
+  .nitro-features {
+    z-index: -1;
+  }
+  .nitro-feature-titles {
+    width: 85%;
+    margin: 1rem auto;
+    letter-spacing: 1px;
+  }
+  .nitro-feature-titles h1 {
+    font-size: 1.375rem;
+    text-align: left;
+  }
+  .nitro-feature-titles h3 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .nitro-tail .nitro-tail-con h2 {
+    font-size: 1.75rem;
+  }
+  .nitro-tail .nitro-tail-con .hero-btn-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nitro-tail .nitro-tail-con .hero-btn-holder button {
+    margin: 4px 0;
+    width: 100%;
+  }
+  .nitro-tail .nitro-tail-con .hero-btn-holder .btn-2 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 399px) {
+  .nitro-container {
+    display: none;
+  }
+  .video-wrapper {
+    display: none;
+  }
+  .nitro-hero {
+    min-height: 85vh;
+    background-image: -webkit-gradient(linear, left top, right top, from(#b473f5), to(#e292aa));
+    background-image: linear-gradient(to right, #b473f5, #e292aa);
+    overflow-x: hidden;
+  }
+  .mobile-layout-wrapper {
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .mobile-img-holder, .mobile-nitro-text {
+    position: absolute;
+  }
+  .mobile-img-holder {
+    margin-top: 10rem;
+    margin-left: 20rem;
+  }
+  .mobile-nitro-text {
+    margin-top: 45rem;
+  }
+  .mobile-nitro-text .mobile-nitro-para {
+    font-family: "Ginto Normal", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #FFF;
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .mobile-hero-btn-holder button {
+    margin: 0.5rem;
+    width: 85%;
+  }
+  .mobile-hero-btn-holder .monthly-btn {
+    width: 85%;
+  }
+  .mobile-hero-img {
+    display: block;
+    scale: 0.425;
+  }
+  .nitro-features {
+    z-index: -1;
+  }
+  .nitro-feature-titles {
+    width: 85%;
+    margin: 1rem auto;
+    letter-spacing: 1px;
+  }
+  .nitro-feature-titles h1 {
+    font-size: 1.375rem;
+    text-align: left;
+  }
+  .nitro-feature-titles h3 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .nitro-tail .nitro-tail-con h2 {
+    font-size: 1.75rem;
+  }
+  .nitro-tail .nitro-tail-con .hero-btn-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nitro-tail .nitro-tail-con .hero-btn-holder button {
+    margin: 4px 0;
+    width: 100%;
+  }
+  .nitro-tail .nitro-tail-con .hero-btn-holder .btn-2 {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Nitro.css.map */
