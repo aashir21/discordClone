@@ -121,7 +121,7 @@
     }
 
     .safety-card-con{
-        width: 65%;
+        width: 75%;
         height: 100%;
         margin: 2rem auto;
         @include flex(center,center);
@@ -131,7 +131,7 @@
     .safetyCard{
         width: 350px;
         height: 300px;
-        margin: 1rem;
+        margin: 1rem 1.5rem;
         cursor: pointer;
         text-align: left;
         font-family: "Whitney",sans-serif;
@@ -165,7 +165,17 @@
 
 }
 
-@media screen and (min-width: 250px) and (max-width: 1150px) {
+@media screen and (min-width: 1151px) {
+    .safety-card-con{
+        
+        .safetyCard{
+            width: 325px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 250px) and (max-width: 1100px) {
     .sC-hero-img{
         display: none;
 
