@@ -1,6 +1,6 @@
 # Discord Clone
 
-# Table Of Contents
+## Table Of Contents
 * [General Info](#general-info)
 * [Technologies](#technologies)
 * [Features](#features)
