@@ -2,6 +2,7 @@
 
 ## Table Of Contents
 * [General Info](#general-info)
+* [Project Status](#project-status)
 * [Technologies](#technologies)
 * [Features](#features)
 
@@ -13,6 +14,7 @@ NOTE: This project is for personal use only and does not tend to gain any commer
 
 ### Project Status
 Completed
+* https://discorded.netlify.app
 
 ## Technologies
 * React version = 18.0.0
